@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "remappable-escape",
+  "version": "${version}",
+
+  "name": "Remappable Escape Mod",
+  "description": "",
+  "authors": [
+    "jptrzy"
+  ],
+  "contact": {
+  },
+
+  "license": "LGPL-3.0",
+  "icon": "assets/remappable-escape/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.jptrzy.remappable.escape.Main"
+    ],
+    "client": [
+      "xyz.jptrzy.remappable.escape.Client"
+    ]
+  },
+  "mixins": [
+    "remappable-escape.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {}
+}
